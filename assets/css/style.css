@@ -8,6 +8,10 @@ body{
     color: white;
 }
 
+h1{
+    text-align: center;
+}
+
 #container {
     text-align: center;
     padding: 20px;
@@ -18,3 +22,90 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
 }
+ #unicornImg, #rabbitImg{
+    width: 20%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#dialogueBox{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    margin-top: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+button{
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #fff;
+}
+
+         #unicornImg,
+         #rabbitImg,
+         #dialogueBox,
+         #nextButton,
+         #restartButt,
+         #reButton {
+            display: none;
+         }
+
+         #nextButton, #restartButton {
+            display: none; /* Caché par défaut */
+        }
+        
+        /* Style des dialogues */
+        .unicorn {
+            color: #f11fdf; /* Texte rose */
+            padding: 10px;
+            margin: 5px 0;
+        }
+        
+        .rabbit {
+            color: #334df1; /* Texte bleu */
+            padding: 10px;
+            margin: 5px 0;
+        }
+        
+        /* Style des images avec une bordure lorsque mises en surbrillance */
+        #unicornImg.highlight {
+            border: 5px solid #f11fdf;
+        }
+        
+        #rabbitImg.highlight {
+            border: 5px solid #334df1;
+        }
+        
+        @media screen and (max-width:768px){
+            .row{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10%;
+            }
+        
+            #licorneImage, #lapinImage {
+                display: none; /* Caché par défaut */
+                width: 50%; /* Taille des images */
+                margin-bottom: 20px; /* Espacement en bas des images */
+                border-radius: 10px; /* Coins arrondis */
+                align-self: center;
+            }
+            
+            #container{
+                min-height: 800px;
+            }
+        
+            button{
+                position: fixed;
+                bottom: 20px;
+            }
+        }
